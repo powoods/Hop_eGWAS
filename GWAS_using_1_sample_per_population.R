@@ -75,7 +75,8 @@ write.csv(trans, file = 'bioclim_qn_unique_locations.csv', row.names = F, quote=
 source("http://zzlab.net/GAPIT/GAPIT.library.R")
 source("http://zzlab.net/GAPIT/gapit_functions.txt")
 
-myGD=read.delim(file="wild_sub_maf05.hmp.txt",header=FALSE,sep="\t")
+myGD=read.delim(file="wild_sub_maf05.hmp.txt",header=FALSE,sep="\t") # VCF converted to HapMap format, subsetted to the 249 wild genotypes and filtered for 
+a minor allele frequency of 5%
 myY <- read.table('bioclim_qn_unique_locations_final_GAPIT.txt',header=T)
 #install.packages("bigmemory",repos = "http://cran.us.r-project.org")
 #install.packages("biganalytics",repos = "http://cran.us.r-project.org")
